@@ -4,7 +4,9 @@
 
 ## CHALLENGES
 
-The participants can select one of the below mentioned challenges in which they will start working from Day 1 and then submit their work at the end of the Camp by generating a PR
+The participants can select one of the below mentioned challenges in which they will start working from Day 1 and then submit their work at the end of the Camp by generating a PR to this repository.
+
+The task is that we utilize GitHub features over the course of next 3 days, each indiviual is to come up with solutions which will require you push
 
 ## DAY 1
 
