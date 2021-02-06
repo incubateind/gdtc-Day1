@@ -6,7 +6,7 @@
 
 The participants can select one of the below mentioned challenges in which they will start working from Day 1 and then submit their work at the end of the Camp by generating a PR to this repository.
 
-The task is that we utilize GitHub features over the course of next 3 days, each indiviual is to come up with solutions which will require you push
+The task is that we utilize GitHub features over the course of next 3 days, each indiviual is to come up with a portfolio of their own and then create a PR. At the end of the Camp we will be having our own portfolios live on the internet to be made public.
 
 ## DAY 1
 
@@ -18,3 +18,6 @@ The task is that we utilize GitHub features over the course of next 3 days, each
 
 Clone the forked repository into your system and initiate with your project from one of the above mentioned categories.
 
+# The task for Day 1 is to create a basic portfolio in HTML and then generate a PR
+
+![](https://storage.googleapis.com/incind/70847770-1e3f3380-1e8a-11ea-8f68-05fa649f6237.jpegEC5HSnc)
