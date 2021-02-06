@@ -1,0 +1,163 @@
+.myrows{
+    border: 3px solid green;
+    padding: 5;
+}
+.mycols{
+    border: 3px solid red;
+}
+.mycontainer{
+   background-color: blue;
+}
+#topHeader
+{   
+    background-color: ghostwhite;
+    border-bottom: 1px solid silver;
+}
+#topHeader a{
+    color: slategrey;
+    font-weight: 600;
+    font-size: 0.89rem;
+}
+/* rem it means 0.89*16
+em
+pixel */
+
+.container-fluid
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+nav ul li a{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+/* #start footer */
+.fullfooter
+{
+    background-color: rgb(4, 77, 1);
+
+}
+.top-footer p
+{
+    color:white;
+}
+.top-footer a
+{
+    color:white;
+    font-weight: 600;
+}
+.top-footer h3
+{
+    color:white;
+}
+.bottom-footer
+{
+    background-color: rgb(0, 0, 71);
+
+}
+.bottom-footer p
+{
+    color: white;
+    padding-top: 9px;
+
+
+}
+
+
+/* this is start of home page top-hero-section */
+.top-hero-section
+{
+    color: white;
+    background-color: rgb(6, 62, 151);
+}
+.top-hero-section a{
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: whitesmoke;
+}
+.top-hero-section button
+{
+    background-color: teal;
+}
+
+
+.qualities-img{
+    width: 250px;
+}
+
+
+/* <!--start rqueirement section--> */
+.requirement-section 
+{
+    background-color: rgb(4, 49, 121);
+    color: white;
+
+}
+.requirement-section  button
+{
+    background-color: teal;
+}
+.requirement-section h3{
+    font-weight: 400;
+
+}
+
+/* <!--################## --> */
+.input_section_email
+{
+    background-color: rgb(4, 49, 121);
+    color: white;
+
+}
+.input_section_email h4
+{
+
+    color: white;
+    font-weight: 400;
+}
+.input_section_email .form-control
+{
+    height: 50px;
+    border-color: transparent;
+    border-radius: 20px 0 0 20px;/* left-top right-top right-bottom left-bottom*/
+}
+.input_section_email .btn
+{
+    min-height: 50px;
+    color: white;
+    background-color: teal;
+    border-color: black;
+    border-radius: 0px 20px 20px 0px;/* left-top right-top right-bottom left-bottom*/
+
+}
+
+
+/* clients section */
+.client-section
+{
+    background-color: #f0f0f0;
+}
+
+/* breadcrumbs_section */
+.breadcrumbs_section {
+    background-color:#f0f0f0 ;
+}
+
+.address
+{
+    font-weight: 600;
+}
+
+
+.bar{
+
+    font-weight: 600;
+    font-size: 1.16rem;
+    border-radius: 17px;
+    border: 2px solid gray;
+
+} 
