@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 # Github Developer Tech Camp
 
 **GitHub developer tech camp** (GDTC) aims to cultivate and inspire future leaders by accommodating a platform to share ideas and create a space for innovation where ideas come to life. GDTC is a platform where the innovators and industry experts meet from diverse fields like Edutech, Healthtech, and Fintech. The event provides a platform for collaboration, discussion, and connecting 50+ colleges & students across India who were a part of the Code Innovation Series to ignite their passion to curb India’s growth story.
