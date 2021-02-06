@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My First HTML Page</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+		* {
+			margin: 0;
+			font-family: Tahoma;
+		}
+		img {
+			max-width: 100%;
+		}
+		.wrap {
+		}
+		.img {
+			border-radius: 50%;
+			width: 100px;
+		}
+		.row1, .row2, .row6, .row7, .wrap1 {
+			background-color: #a1a1a1;
+		}
+		.row3, .row4, .row5, .row8, .wrap2 {
+			background-color: #ccc;
+		}
+.row1, .row7 {
+			width: 80%;
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: auto auto;
+			grid-gap: 20px;
+		}
+		.row4, .row5 {
+			width: 80%;
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-gap: 20px;
+			padding-bottom: 30px;
+		}
+		.bgwhite {
+			background-color: #fff;
+		}
+		.bgblack {
+			background-color: #000;
+			color: #fff;
+		}
+		.alignright {
+			text-align: right;
+		}
+		.aligncenter {
+			text-align: center;
+		}
+		.row1, .pad20 {
+			padding: 20px;
+		}
+		.row2 a {
+			background-color: #000;
+			color: #fff;
+			padding: 10px 15px;
+			text-decoration: none;
+		}
+
+@media only screen and (max-width:576px) {
+			.row1, .row7, .row4, .row5 {
+				grid-template-columns: auto;
+			}
+			.row1 div, .row7 div {
+				text-align: center;
+			}
+			.row7 div ul {
+				text-align: left;
+			}
+		}
+		</style>
+	</head>
+<body>
+		<div class="wrap1">
+			<div class="row1">
+				<div><img src="Capture.png" class="img"></div>
+				<div class="alignright pad20">
+					<h4>Manpreet Singh Saluja</h4>
+					<p>CSE Undergraduated<br>
+					    Student</p>
+				</div>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="row2 aligncenter pad20">
+				<a href="">Projects</a><a href="">About</a><a href="">Contact</a>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="row3 aligncenter pad20">
+				<h2>Projects/Experience</h2>
+			</div>
+		</div>
+<div class="wrap2">
+			<div class="row4">
+				<div>
+					<img src="Java_certificate.jpg">
+					<p>Java Certificate</p>
+					<p>Learn the Java programming Language </p>
+				</div>
+				<div>
+					<img src="HTML_certificate.jpg">
+					<p>HTML Certificate</p>
+					<p>Learn the HTML from Sololearn</p>
+				</div>
+				<div>
+					<img src="CamScanner 05-31-2020 20.31.46_1.jpg">
+					<p>C/C++ Programming Language</p>
+					<p>C/C++ Certificate</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="wrap">
+			<div class="row6 aligncenter pad20">
+				<h2>About Me</h2>
+			</div>
+		</div>
+<div class="wrap1">
+			<div class="row7">
+				<div class="bgwhite pad20">
+					<h4 class="aligncenter">Personal Details</h4>
+					<ul>
+						<li>Manpreet Singh Saluja</li>
+						<li>19/03/2002</li>
+						<li>7617280799</li>
+						<li>Student</li>
+						<li>Raipur</li>
+					</ul>
+				</div>
+				<div class="bgblack pad20">
+					<h4 class="aligncenter">Education/Skillset</h4>
+					<ul>
+						<li>B.Tech Undergraduated</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>C</li>
+						<li>C++</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="row8 aligncenter pad20">&copy; Copyright 2021.</div>
+		</div>
+	</body>
+</html>
