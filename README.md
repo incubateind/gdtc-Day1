@@ -18,6 +18,6 @@ The task is that we utilize GitHub features over the course of next 3 days, each
 
 Clone the forked repository into your system and initiate with your project from one of the above mentioned categories.
 
-# The task for Day 1 is to create a basic portfolio in HTML and then generate a PR
+# The task for Day 1 is to create a basic portfolio like this in HTML and then generate a PR
 
 ![](https://storage.googleapis.com/incind/70847770-1e3f3380-1e8a-11ea-8f68-05fa649f6237.jpegEC5HSnc)
