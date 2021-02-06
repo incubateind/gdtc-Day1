@@ -1,0 +1,278 @@
+*{ margin: 0; padding: 0; }
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import 'mixins';
+
+body,html{
+    font-size: 16px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.dark_theme{
+    background-color: #0a1524;
+    color: #fff;
+}
+
+.dark_theme .index--root .container-xl .row .about_me{
+    background-color: #6197c9;
+}
+
+.dark_theme .education--root .container-xl .row{
+    background-color: #6197c9;
+}
+
+.dark_theme .experience--root .container-xl .row .divider{
+    background-color: #fff;
+}
+
+.dark_theme .experience--root .container-xl .row .company_logo  img{
+    background-color: #fff;
+}
+
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 31px; padding: 0; line-height: 31px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "LIGHT";
+    padding-left: 10px;
+    background-color: #3299B3; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "DARK";
+    padding-right: 10px;
+    background-color: #0F0D0D; color: #FFFAFA;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 16px; margin: 7.5px;
+    background: #F5EDED;
+    position: absolute; top: 0; bottom: 0;
+    right: 55px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+.index--root { @include index }
+
+.experience--root { @include experience }
+
+.education--root { @include education }
+
+.project--root { @include project }
+
+.footer--root { @include footer }
+
+@media only screen and (max-width: 768px) {
+    .experience--root{
+        .container-xl{
+            .row{
+                height: 75vh;
+                .company_logo{
+                    img{
+                        height: auto;
+                        width: 11rem;
+                    }
+                }
+                .my_work{
+                    margin-bottom: 2rem;
+                    margin-top: -5rem;
+                    
+                }
+            }
+        }
+    }
+    .project--root{
+        .container-xl{
+            .row{
+                height: 35rem;
+                .col-md-6{
+                    img{
+                        height: auto;
+                        width: 32rem;
+                    }
+                    &:hover{
+                        p{
+                            font-size: 0.7rem;
+                         }
+                      }
+                }
+            }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .divider{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
+    .experience--root{
+        .container-xl{
+            .row{
+                height: 75vh;
+                .company_logo{
+                    img{
+                        height: auto;
+                        width: 11rem;
+                    }
+                }
+                .my_work{
+                    margin-bottom: 2rem;
+                    margin-top: -3rem;               
+                }
+            }
+        }
+    }
+    .project--root{
+        .container-xl{
+            .row{
+                height: 32rem;
+                .col-md-6{
+                    img{
+                        height: auto;
+                        width: 28rem;
+                    }
+                    &:hover{
+                        p{
+                            font-size: 0.7rem;
+                         }
+                      }
+                }
+            }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .project--root{
+        .container-xl{
+            .row{
+                height: 30rem;
+                .col-md-6{
+                    img{
+                        height: auto;
+                        width: 25rem;
+                    }
+                    &:hover{
+                        p{
+                            font-size: 0.6rem;
+                         }
+                      }
+                }
+            }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 395px) {
+    .experience--root{
+        .container-xl{
+            .row{
+                height: 75vh;
+                .company_logo{
+                    img{
+                        height: auto;
+                        width: 11rem;
+                    }
+                }
+                .my_work{
+                    margin-bottom: 3rem;
+                    margin-top: 1rem;               
+                }
+            }
+        }
+    }
+    .project--root{
+        .container-xl{
+            .row{
+                height: 25rem;
+                .col-md-6{
+                    height: 5rem;
+                    img{
+                        height: auto;
+                        width: 22rem;
+                    }
+                    &:hover{
+                        p{
+                            font-size: 0.5rem;
+                         }
+                      }
+                }
+            }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .project--root{
+        .container-xl{
+            .row{
+                height: 25rem;
+                .col-md-6{
+                    height: 5rem;
+                    img{
+                        height: auto;
+                        width: 20rem;
+                    }
+                    &:hover{
+                        p{
+                            font-size: 0.5rem;
+                         }
+                      }
+                }
+            }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .project--root{
+        .container-xl{
+            .row{
+                .col-md-6{
+                    height: 5rem;
+                    img{
+                        height: auto;
+                        width: 17rem;
+                    }
+                    &:hover{
+                        p{
+                            font-size: 0.5rem;
+                         }
+                      }
+                }
+            }
+        }
+    }
+  }
