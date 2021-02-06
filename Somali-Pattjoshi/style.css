@@ -1,0 +1,50 @@
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.home {
+    background-image: linear-gradient(rgba(13, 13, 14, 0.623),rgba(10, 10, 10, 0.568) ) , url("https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920__340.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+    background-position: center;
+}
+
+
+.navbar-toggler:focus , .navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.skill {
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    background-position: center;
+}
+.about {
+    background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   height: auto;
+   background-position: center;
+}
+.work {
+    background-image: linear-gradient(rgba(13, 13, 14, 0.623),rgba(10, 10, 10, 0.568) ) , url("https://cdn.pixabay.com/photo/2017/05/11/11/15/workplace-2303851__340.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    background-position: center;
+}
+.card-img-top {
+    height: 250px;
+}
+footer {
+    background: linear-gradient(rgba(13, 13, 14, 0.897),rgba(10, 10, 10, 0.938) );
+    color: white;
+    height: auto;
+}
