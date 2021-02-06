@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<style> 
+    
+body{
+    display:flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background:linear-gradient(45deg, #ffaf00, #bb02ff);
+	background-attachment: fixed;  
+    } 
+.container{
+	position: relative;
+	width: 1150px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.container .card
+{
+	position: relative;
+	width:300px;
+    height: 420px;
+    background: #ffff;
+    margin:20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2)
+    transition:2s;
+}
+.container:hover .card{
+	filter:blur(20px);
+	transform: scale(0.9);
+	opacity: 0.5;
+}
+.container .card:hover
+{
+	filter: blur(0px);
+	transform: scale(1.1);
+	opacity:1;
+}
+.container .card .circle
+{
+	position: relative;
+	width: 100%;
+	height:100%;
+	background:orange;
+	clip-path: circle(180px at center 0);
+	text-align: center;
+}
+
+.container .card .content
+{
+	position: absolute;
+	bottom:10px;
+	padding:  20px;
+	text-align: center;
+
+}
+.login{
+    position:relative;
+    border: 1px;
+    color: black;
+    padding: 30px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom:5px;
+    }
+    
+.btn{
+    border:5px solid orange;
+    border-radius:25px;
+    padding: 10px 10px;
+    box-shadow
+    }
+    
+</style>                               
+</head>
+
+<body>
+<div class="container">
+		<div class="card">
+			<div class="circle">
+               <img src="https://miro.medium.com/max/1200/1*PIs25RW-zFYGalzlzgdI9A.jpeg" width=100% height=50% opacity:0.5>
+            </div>
+			<div class="content">
+                <form action="{{ url_for('predict')}}"method="post">
+                <input class="login" type="text" name="inp_text" placeholder="Enter a comment" required="required" />   
+                <button type="submit" class="btn">Predict</button>  
+                </form>
+
+                <br>
+                <br>
+                {{ prediction_probabilities }}
+
+            </div>
+       </div>   
+</div>    
+
+
+</body>
+</html>
