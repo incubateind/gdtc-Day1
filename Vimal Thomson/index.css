@@ -1,0 +1,51 @@
+
+
+#edu {
+color: black;
+width: 400px;
+float: left;
+display: block;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+#tech {
+color: black;
+clear:both;
+}
+
+#container {
+background-color: white;
+width:1200px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#per {
+float: right;
+color: black;
+width: 700px;
+
+}
+
+#foot {
+font-size: 15px;
+padding:10px;
+color: black;
+clear:both;
+
+}
+
+H1 {
+text-align : center;
+background-color: grey;
+color: white;
+}
+#det{
+font-size: 20px;
+color: black;
+text-align:left;
+}
+.selected{
+font-size: 15px;s
+}
