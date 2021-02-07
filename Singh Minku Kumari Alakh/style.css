@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.whole-container{
+    background-color: orange;
+}
+
+body{
+    margin: 1% 20% 0 20%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-image-text img{
+    width: 100%;
+    text-align: center;
+}
+
+.intro-text{
+    width: 100%;
+    position: relative;
+    margin: -40% 30%;
+    color: aliceblue;
+}
+
+.container{
+    width: 50%;
+    margin-top: 80%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+.each-info{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+footer{
+    height: 50%;
+    background-color: black;
+    color: rgb(129, 128, 126);
+}
+
+footer p{
+    text-align: center;
+    margin-top: 5%;
+    font-size: small;
+}
+
+
+
+
