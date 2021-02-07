@@ -1,0 +1,168 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>At connection's</title>
+	<link href="../../images/sdLogo.png" rel="icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+<!-- 
+Easy Profile Template
+http://www.templatemo.com/tm-467-easy-profile
+-->
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="../js/jquery-3.5.1.min.js" rel="stylesheet"></script>
+	<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+	
+
+	<script>
+		$("document").ready(function(){
+			$("#clientdata").submit(function(){
+				if($("#fullName").val()==""){
+					alert("Name is Blank");
+					return false;
+				}
+				if($("#userName").val()==""){
+					alert("Name is Blank");
+					return false;
+				}
+				if($("#email").val()==""){
+					alert("Email is blank");
+					return false;
+				}
+				if($("#password").val()==""){
+					alert("Password is blank"); 
+					return false;
+				}
+				var a=$("#password").val();
+				var b=$("#rpassword").val();
+				if(a!=b){
+					alert("Password not Match");
+					return false;
+				}
+				if($("#age").val()==""){
+					alert("Age is blank"); 
+					return false;
+				}
+				var a=$("#age").val();
+				if(a<18 || a>70){
+					alert("Age Not Eligible for Submit Form");
+					return false;
+				}
+				if($("#bdate").val()==""){
+					alert("Please Enter Birthdate");
+					return false;
+				}
+				if($("#city").val()==""){
+					alert("Please Enter City"); 
+					return false;
+				}
+				if($("#country").val()==""){
+					alert("Please Enter Country");
+					return false;
+				}
+				if($("#state").val()==""){
+					alert("Please Enter State");
+					return false;
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	
+	<header>
+		<div class="container">
+			<center style="padding: 50px 0px">
+				<h3 style="color: #bd93f9">Let's get started</h3>
+			</center>
+		</div>
+	</header>
+	
+	<div class="container">
+		<div class="bs-docs-section">
+			<div class="row">
+				<div class="col-lg-2 col-sm-2">
+				</div>
+				<div class="col-lg-8 col-sm-8">
+					<div class="bs-component">
+						<center>
+							<img src="../../images/profile.png" height="100" width="100"><br><br>
+							<input type="file"><br><br>
+						</center>
+					  <form id="clientdata" method="post">
+						
+							<div class="form-group">
+								<label for="fullName">Full Name</label>
+								<input type="text" class="form-control" id="fullName" aria-describedby="emailHelp" placeholder="Enter username">
+							</div>
+							
+						  <div class="form-group">
+							<label for="userName">User Name</label>
+							<input type="text" class="form-control" id="userName" aria-describedby="emailHelp" placeholder="Enter username">
+						  </div>
+						  <div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+						  </div>
+						  <div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" class="form-control" id="password" placeholder="Password">
+						  </div>
+							<div class="form-group">
+								<label for="rpassword">Re-enter Password</label>
+								<input type="password" class="form-control" id="rpassword" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label for="age">Age</label>
+								<input type="number" class="form-control" id="age" placeholder="Age">
+							</div>
+							<div class="form-group">
+								<label for="bdate">Birth Date</label>
+								<input type="date" class="form-control" id="bdate" placeholder="DOB">
+							</div>
+							<div class="form-group">
+								<label for="country">Country</label>
+								<input type="text" class="form-control" id="country" placeholder="Country">
+							</div>
+							<div class="form-group">
+								<label for="state">State</label>
+								<input type="text" class="form-control" id="state" placeholder="State">
+							</div>
+							<div class="form-group">
+								<label for="city">City</label>
+								<input type="text" class="form-control" id="city" placeholder="City">
+							</div>
+							<div class="form-group">
+								<label for="comment">Note</label>
+								<textarea type="textarea" id="comment" rows="2" name="note" class="form-control" placeholder="Enter note"></textarea><br>
+			
+							</div>
+						  <br>
+						  <div class="row">
+							<div class="col-lg-2 col-sm-2">
+								<input type="submit" id="submit" name="Register" class="btn btn-outline-success"></input>
+							</div>
+							<div class="col-lg-8 col-sm-8">
+							</div>
+							<br><br>
+							<div class="col-lg-2 col-sm-2">
+								<a href="../tutorial01/login.html" target="_blank"><p>Already have an account?</p></a>
+							</div>
+						  </div>                
+					  </form>
+					</div>
+				</div> 
+				<div class="col-lg-2 col-sm-2">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
