@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDTC</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: grid;
+            place-content: center;
+            text-align: center;
+            background-color: blue;
+        }
+
+        h1 {
+            margin: 2em 0;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #dadada;
+            padding: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Karthik Mothiki
+    </h1>
+ 
+    <h3>Introduction</h3>
+   
+    <p>I'm a student at Sastra Deemed University, B.Tech
+Mechatronics. My dream is to diversify my proficiency in every
+domain. Enraptured for AI, and Robotics. I ponder myself as
+Tech Lunatic and highly fascinated about Technology. I'm very
+good at time management and Multitasking.</p>
+    
+   <h3>Education</h3>
+    
+   <p>B. Tech Mechatronics 2-1
+8.29
+Sarada Educational Institutions
+Intermediate
+10/10
+Viswavani E.M High School
+High School
+9.8/10</p>
+
+  <h3>SKILLS</h3>
+  
+  <p>Programming: Python C++ C Java
+Robotics
+AWS Cloud Computing
+Design Softwares: Auto CAD
+Embedded Systems: Arduino Uno, Node MCU
+ROS
+Android App Development</p>
+
+    <h3>Experience</h3>
+    
+    <p><b>Ai Tech Web<b>
+Technical Content Writer
+Worked as Technical content writer for 45 days.
+Produced content for technology related blogs at
+aitechweb.com
+Ethnus Code Mithra
+AWS Cloud Beginner
+At Ethnus Code Mithra I've learnt the basics of
+AWS and used those skills to develop a serverless
+Leaderboard for a game.</p>
+
+    <footer>
+        Karthik Mothiki
+    </footer>
+</body>
+
+</html>
