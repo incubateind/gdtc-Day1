@@ -1,0 +1,384 @@
+<html>
+<head>
+  <link rel="stylesheet" href="bg.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+
+font-family: Century Gothic;
+color: white;
+background-color: black;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+#container
+{
+background-image: url("https://images.unsplash.com/photo-1610465299993-e6675c9f9efa?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=martin-sanchez-G78c3DPmD_A-unsplash.jpg");
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+#nav
+{
+color :white;
+font-weight: bold;
+font-family: serif;
+}
+#nav .id{
+font-family: Freestyle Script;
+color:white;
+font-size:50px;
+}
+#nav  li{
+  display: inline-block;
+  font-size: 20px;
+  font-style: normal;
+  font-family: Century Gothic;
+  padding:25px;
+}
+
+li:hover
+{
+background-color: black;
+color:white;
+}
+#nav a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+#nav a:hover{
+  padding: 20px;
+    background-color: rgba(0,255,255, .4);
+    border-radius: 20px;
+}
+
+#content2{
+  font-family: Exo 2;
+  font-weight: bold;
+height:500px;
+
+}
+
+.new
+{
+width:1000px;
+font-size: 20px;
+font-family: Kristen ITC;
+
+  position: relative;
+top:360px;
+left:450px;
+
+}
+.he
+{
+float: right;
+  position: relative;
+  top:150px;
+  right:350px;
+    font-size: 25px;
+ border:5px solid white;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: rgba(45,45,45, 0.6);
+    color:white;
+    font-weight: bold;
+    text-indent: 20px
+}
+#content2 button{
+  width:150px;
+  height:40px;
+  border-radius: 30px;
+  border: 4px solid white;
+  background-color: black;
+  color:white;
+  font-weight: bold;
+  position: relative;
+  top:400px;
+  left:550px;
+    bottom: 100px;
+}
+#content2 button:hover
+{
+background-color: rgba(0,255,255, .4);
+}
+#content3
+{
+    margin-top: 200px;
+height: 50%;
+width: 100%;
+color:white;
+
+}
+#content3 .pp
+{
+  margin-right: 50px;
+  margin-left: 50px;
+
+}
+#content3 .gallery {
+
+
+  margin: 5px;
+  border: 3px solid white;
+display: inline-block;
+  width: 300px;
+}
+
+#content3 .gallery:hover {
+  border: 3px solid lightgrey;
+
+}
+
+#content3 .gallery img {
+  width: 100%;
+  height: auto;
+}
+#content3 .gallery img:hover{
+  filter: blur(4px);
+}
+#content3 .desc {
+  padding: 15px;
+  text-align: center;
+}
+#content3 .btn{
+  float: right;
+
+position: relative;
+top:-150px;
+left:-40px;
+
+  width:200px;
+  height:40px;
+  border-radius: 30px;
+  border: 2px solid white;
+  margin-left: 20px;
+  color:white;
+  font-weight: bold;
+  background-color: black
+}
+#content3 .btn:hover{
+  border: 2px solid white;
+background-color: rgba(0,255,255, .4);
+}
+#footer
+{
+clear:both;
+
+}
+#footer .page{
+
+background-color: #ECECEC;
+border: 5px solid white;
+
+
+position: relative;
+top:260px;
+height: 600px;
+
+}
+#footer .frm
+{
+
+position: relative;
+top:50px;
+margin-left:50px;
+}
+input
+{
+  border: 2px solid lightgrey;
+  border-radius: 20px ;
+  padding: 10px;
+  width :300px;
+  margin-bottom: 20px;
+  font-family: century gothic;
+}
+textarea{
+  border: 2px solid lightgrey;
+  border-radius: 20px ;
+  padding: 10px;
+  width :300px;
+  margin-bottom: 20px;
+  font-family: century gothic;
+}
+input:hover,textarea:hover{
+  background-color:black;
+  color:white;
+
+}
+.smt{
+  border:2px solid black;
+  background-color: green;
+}
+.smt:hover
+{
+background-color: rgba(0,255,255, .4);
+  color:white;
+}
+#footer .cntus
+{ padding: 20px;
+  float :right;
+position: relative;
+top:-270px;
+left:350px;
+border:2px solid white;
+background: rgba(255,255,255, 0.4);
+}
+#footer .cntus i
+{
+  padding:10px;
+}
+#footer .cntus b
+{color:black;
+  padding:2px;
+  text-align: justify;
+  font-size:15px;
+  font-weight:normal;
+  font-family: century gothic;
+}
+#footer button
+{
+  width:200px;
+  height:40px;
+  border-radius: 30px;
+  border: 2px solid white;
+  margin-left: 20px;
+  color:white;
+  font-weight: bold;
+}
+#footer .maps{
+  position:relative;
+  top:-300px;
+  right:550px;
+float: right;
+}
+#footer.mapouter
+{
+  position:relative;
+
+
+  height:430px;
+  width:442px;
+}
+#footer.gmap_canvas
+ {
+   overflow:hidden;
+   background:none;
+   height:430px;
+   width:442px;
+ }
+
+</style>
+</head>
+<body>
+
+<div id="container">
+
+
+<div id="nav">
+  <ul>
+  <li><a href="">home</a></li>
+    <li><a href="#contactus">contact me</a></li>
+
+      <li><a href="#feedback">Feedback</a></li>
+        <li style="float:right;padding:25px;font-size: bold;"><b style="color:white;font-family:Lucida Handwriting;font-size:80px;">B</b><b class="id">LOGGER</b></li>
+    </ul>
+
+</div>
+
+<div id="content">
+<div id="content2">
+<div class="he"><h1>PORTFOLIO</h1></div>
+  <div class="new"><p >"Hey, NJ explore to know more</p></div>
+
+
+
+
+<button style='margin-right:40px'><a href="login.html">HIRE ME</a></button>
+<button style='margin-right:16px'><a href="">EXPLORE</a></button>
+</div>
+
+<div id="content3">
+  <div class="pp">
+  <h2>RECENT BLOGS</h2>
+
+  <div class="gallery">
+    <a target="_blank" href="#">
+      <img src="https://images.unsplash.com/photo-1495480024026-9dd2033e4b63?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=tim-foster-XNDRevkpoZg-unsplash.jpg" alt="Cinque Terre" width="600px" height="400px">
+    </a>
+    <div class="desc">#Blog 1</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="#">
+      <img src="https://images.unsplash.com/photo-1495458200315-8a1dce4bbe77?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=evren-aydin-k_-rJeU2XTw-unsplash.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">#Blog 2</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="#">
+      <img src="https://images.unsplash.com/photo-1495114439165-3fc880396f37?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=titus-aparici-8DkTDqJzA58-unsplash.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">#Blog 3</div>
+  </div>
+  <div><button class="btn">READ MORE</button></div>
+
+</div>
+</div>
+</div>
+<div id="footer">
+
+  <div class="page">
+    <a id="feedback">
+    <div class="frm">
+      <h3 style="color:black;margin-left:5px;"> FEED BACK</h3>
+    <form action="" method="post"><br>
+      <input type="text" name="name" placeholder="NAME" value="" /><br>
+      <input type="text" name="email" placeholder="EMAIL" value="" /><br>
+
+      <textarea name="address" placeholder="ADDRESS" value="" ></textarea><br>
+
+      <input class="smt" type="submit" name="submit" value="SUBMIT"/>
+    </div>
+
+    <div class="maps">
+
+      <h2 style="color:black;">LOCATION</h2>
+    <div class="mapouter">
+      <div class="gmap_canvas"><iframe width="442" height="430" id="gmap_canvas" src="https://maps.google.com/maps?q=banglore&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+      </iframe>
+
+      <br>
+
+    </div></div></div>
+      <div class="cntus">
+          <a id="contactus">
+          <h3 style="color:black;margin-left:5px;font-size:20px;"> CONTACT US</h3>
+    <i class="fa fa-home" style="font-size:35px;color:black;">&nbsp;&nbsp;<b>bvilla hdgowda street ,airport road,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;banglore,karntaka,655509</b></i><br>
+    <i class="fa fa-envelope" style="font-size:35px;color:black;">&nbsp;&nbsp;<b>kmablog@blogspot.blg.in</b></i><br><br>
+
+  <button style="background-color:red"> GOOGLE + </button><br><br>
+<button style="background-color:blue"> FACEBOOK</button><br><br>
+<button style="background-color:pink"> INSTAGRAM </button><br><br>
+</div>
+
+</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<?php 
+include './db.php';
+?>
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>ebiz | District :: </title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="a2z Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script> 
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!--banner slider  -->
+	<link href="css/JiSlider.css" rel="stylesheet">
+	<!-- //banner-slider -->
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="//fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+ <style>
+                                                .col-md-4 banner-grid2
+                                                {
+                                                    width: 20%!important;
+                                                }
+                                                
+                                            </style>	
+</head>
+
+<body>
+	<!-- header -->
+	<?php
+        include './topbar.php';
+        ?>
+	<!-- //header -->
+	<!-- banner -->
+	<div class="banner-silder">
+		<div id="JiSlider" class="jislider">
+			<ul>
+                       
+				<li>
+                                    <div class="banner-top banner-top1" style="background-image:  url('my image/eb2.jpg')">
+						<div class="container">
+							<div class="banner-info info2">
+								<h3>Hospital Services</h3>
+								<p>let us do it for you.</p>
+
+							</div>
+						</div>
+					</div>
+				</li>
+
+
+				<li>
+                                    <div class="banner-top banner-top2" style="background-image:  url('my image/cllge.jpg')">
+						<div class="container">
+							<div class="banner-info bg3 info2">
+								<h3>one click college service</h3>
+								<p><!--repair.&nbsp;improve.&nbsp;maintain-->About Colleges</p>
+							</div>
+
+						</div>
+					</div>
+				</li>
+				<li>
+                                    <div class="banner-top banner-top3" style="background-image:  url('images/eb1.jpg')">
+						<div class="container">
+							<div class="banner-info bg3">
+								<h3>Temples Services</h3>
+								<p>About Temples</p>
+							</div>
+
+						</div>
+					</div>
+				</li>
+                                <li>
+                                    <div class="banner-top banner-top3" style="background-image:  url('my image/trsms.jpg')">
+						<div class="container">
+							<div class="banner-info bg3">
+								<h3>Tourism Services</h3>
+								<p>About Tourism</p>
+							</div>
+
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- //banner -->
+		<!-- banner bottom -->
+		<div class="banner-btm">
+			<div class="container">
+				<div class="banner-bottom-main">
+<!--					<div class="col-md-4 banner-btmg1" style="background-image:  url('my image/pathanamthitta_district_map (1).png')">
+
+	
+					</div>-->
+					<div class="w3_tab_img">
+                                           
+                                            <?php 
+                            $qr=  mysqli_query($con, "select *from category order by Id desc");
+                            while ($r1=  mysqli_fetch_array($qr))
+                            {
+                            ?>
+                                            <div class="col-md-6" >	
+                                                <div class="banner-subg1 demo">
+								<h3><?php echo $r1['Category'];?></h3>
+								<p>Details about all <?php echo $r1['Category'];?>.</p>
+								<span class="fa fa-cog" aria-hidden="true"></span>
+								<div class="read-btn">
+                                                                    <a href="hospital.php?category=<?php echo $r1['Category'];?>">view more</a>
+								</div>
+							</div>&nbsp;
+                                                </div>
+                                            &nbsp;
+                                                    <?php 
+                            }
+?>
+<!--							<div class="banner-subg1">
+								<h3>College</h3>
+								<p>details about all the Colleges in Pathanamthitta District.</p>
+								<span class="fa fa-check-square-o" aria-hidden="true"></span>
+								<div class="read-btn">
+									<a href="hospital.php?category=Colleges">view more</a>
+								</div>
+							</div>-->
+
+						
+<!--						<div class="col-md-4 banner-grid2">
+							<div class="banner-subg1">
+								<h3>Hotels</h3>
+								<p>Details about all the Hotels in Pathanamthitta District.</p>
+								<span class="fa fa-yelp" aria-hidden="true"></span>
+								<div class="read-btn">
+									<a href="hospital.php?category=Hotels">view more</a>
+								</div>
+							</div>
+							<div class="banner-subg1">
+								<h3>Electronics&Appliences</h3>
+								<p>Details about all the Electronics&Appliences places in Pathanamthitta District.</p>
+								<span class="fa fa-gg" aria-hidden="true"></span>
+								<div class="read-btn">
+									<a href="hospital.php?category=Electronics&Appliences">view more</a>
+								</div>
+							</div>
+                                                    <br/>
+						</div><div class="clearfix"></div>
+                                            <div class="col-md-4 banner-grid2">
+							<div class="banner-subg1">
+								<h3>School</h3>
+								<p>Details about all the School in Pathanamthitta District.</p>
+								<span class="fa fa-cog" aria-hidden="true"></span>
+								<div class="read-btn">
+                                                                    <a href="hospital.php?category=School">view more</a>
+								</div>
+							</div>
+							<div class="banner-subg1">
+								<h3>Furniture</h3>
+								<p>details about all the Furniture in Pathanamthitta District.</p>
+								<span class="fa fa-check-square-o" aria-hidden="true"></span>
+								<div class="read-btn">
+									<a href="hospital.php?category=Furniture">view more</a>
+								</div>
+							</div>
+
+						</div>-->
+					     </div>
+                        </div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!-- //banner bottom -->
+		<!-- about -->
+		<div class="agile-about-main">
+                    <div class="col-md-4 about-left " style="background-image:  url('my image/248.jpg')">
+				<div class="about-main-bg text-center">
+					<h4 class="about-title"></h4>
+					<h4 class="sub">
+						<span></span>kerala
+						<span>S</span>tate</h4>
+				</div>
+			</div>
+			<div class="col-md-8 about-bottom-g1">
+				<h4>One Stop Solution for your Complete kerala</h4>
+				<!-- <h4>get easy home repairs and upgrades with professional home service providers</h4> your complete home solution.-->
+				<div class="about-grid">
+					<div class="about-bottom-right">
+						<div class="abouthome-grid">
+							<span class="hi-icon hi-icon-archive fa fa-check"> </span>
+						</div>
+						<div class="about-bottom">
+							<h5>Hospitals</h5>
+							<p>All the Hospitals in kerala</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="about-bottom-right">
+						<div class="abouthome-grid">
+							<span class="hi-icon hi-icon-archive fa fa-check"> </span>
+						</div>
+						<div class="about-bottom">
+							<h5>College</h5>
+							<p>All the  Colleges in kerala</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class=" about-bottom-right">
+						<div class="abouthome-grid">
+							<span class="hi-icon hi-icon-archive fa fa-check"> </span>
+						</div>
+						<div class="about-bottom">
+							<h5>Hotels</h5>
+							<p>All the Hotels in kerala</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class=" about-bottom-right">
+						<div class="abouthome-grid">
+							<span class="hi-icon hi-icon-archive fa fa-check"> </span>
+						</div>
+						<div class="about-bottom">
+							<h5>Electronics&Appliences</h5>
+							<p>All the Electronics&Appliences places in kerala</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<!--<div class="abt-img">
+					<img src="images/a1.png" alt="" class="img-responsive" />
+				</div>-->
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- //about -->
+	<!--  about bottom -->
+	<div class="w3ls-section">
+		<div class="container">
+			<div class="main-bottom">
+                            <div class="col-md-6 col-sm-6 mb-left" style="background-image:  url('my image/pathanamthittamap.jpg')">
+
+				</div>
+				<div class="col-md-6 col-sm-6 mb-right">
+					<h4>service you can trust</h4>
+					<p>Guid u in correct way.</p>
+					<a href="index.php">view all services</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--  //about bottom -->
+	<!-- footer -->
+	<?php 
+        include './footer.php';
+        ?>
+	<!--//footer  -->
+	<!-- js -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- //js-->
+	<!--banner-slider-->
+	<script src="js/JiSlider.js"></script>
+	<script> 
+		$(window).load(function () {
+			$('#JiSlider').JiSlider({
+				color: '#fff',
+				start: 1,
+				reverse: false
+			}).addClass('ff')
+		})
+	</script>
+	<!-- //banner-slider -->
+	<!--search-bar-->
+	<script src="js/main.js"></script>
+	<!--//search-bar-->
+	<!-- start-smooth-scrolling -->
+	<script  src="js/move-top.js"></script>
+	<script  src="js/easing.js"></script>
+	<script> 
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- //end-smooth-scrolling -->
+	<!-- smooth-scrolling-of-move-up -->
+	<script> 
+		$(document).ready(function () {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<script  src="js/SmoothScroll.min.js"></script>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/bootstrap.js"></script>
+</body>
+
+</html>
