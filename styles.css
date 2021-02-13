@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Lato:wght@300&display=swap', sans-serif;
+}
+
+.navbar{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    background: rgba(0, 0, 0, 0.6) !important;
+    padding: 7px 0;
+    margin:0;
+    border-radius: 0;
+    position: fixed;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color:fff;
+    padding-left:15px;
+}
+.navbar-dark .navbar-nav .nav-active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #1ebba3;
+    text-decoration: none;
+}
+.background{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    
+
+
+}
+.heading-content{
+    position: absolute;
+    top:45%;
+    width:100%;
+    max-width:100%;
+}
+.heading-content h1{
+    color:white;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    font-family:Hammersmith One;
+}
+.heading-content h5{
+    color:whitesmoke;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    font-family: monospace;
+    font-size:2.5em;
+}
+#p1{
+    color:whitesmoke;
+    font-size:25px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: Raleway;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+.header1{
+    margin:0px;
+    top:40%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.u1{
+    background-color: whitesmoke;
+    height: 2px;
+    width: 50%;
+}
+
+
+
+/*------------------About ME---------------*/
+#myback{
+    border-radius: 6px;
+}
+#know{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Raleway;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#paraabt{
+    min-height: 10vh;
+    font-size: 18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .btn{
+    border:2px solid transparent;
+    width:40%;
+    padding:15px;
+    background: #000000;
+    border-radius: 10px;
+    margin-top:10px
+
+}
+#about .btn a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#about .btn:hover{
+    border:3px solid #1ebba3;
+    cursor: pointer;
+}
+/*-----------------------GITHUB----------------*/
+.aboutbtn{
+    border:2px solid transparent;
+    max-width:20%;
+    padding:15px;
+    background: #3f4079;
+    border-radius: 10px;
+    margin-top:5px
+}
+.aboutbtn a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.aboutbtn:hover{
+    border:3px solid #000000;
+    cursor: pointer;
+}
+
+/*-----------------------GITHUB----------------*/
+
+
+/*-----------------------Skillsets----------------*/
+.skillsets{
+    background-color: rgb(70, 70, 70);
+    min-height:70vh;
+    width:100%;
+    max-width: 100%;
+}
+.skill3{
+    height:10vh;
+    color:rgb(252, 252, 252);
+    top:40%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#skillpara{
+    color:salmon;
+    min-height: 30vh;
+    font-size: 20px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects{
+    background-color: rgb(231, 231, 231);
+    min-height:70vh;
+    width:100%;
+    max-width: 100%;
+}
+#projectpara{
+    color:rgb(128, 66, 12);
+    min-height: 30vh;
+    font-size: 20px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------Foooter-----------------------*/
+
+
+.footer{
+    background-color:#353535;
+    overflow: hidden;
+    margin-top: 0px;
+    color: #a86d6d !important;
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+.foot-head{
+    font-size: 18px;
+    font-family: 'Rubik';
+}
+#Menulk{
+    color:whitesmoke;
+    text-decoration-color:#fff;
+    font-size:16px;
+    text-decoration: none;
+}
+small {
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.bold-text {
+    color: #989c9e !important
+}
+
+.mt-55 {
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+h3 {
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.social {
+    font-size: 21px !important
+}
+
+.rights {
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+}
